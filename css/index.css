@@ -1,0 +1,189 @@
+@charset "utf-8";
+nav.floating {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    background-color: #158207a7;
+    border-radius: 10px;
+}
+.first-view {
+    height: calc(100vh - 110px);
+    background-image: url(../images/bg_main.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.first-view-text {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 80px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px #5D116E;
+}
+.first-view-text h1 {
+    font-family: 'Zen Maru Gothic', sans-serif;;
+    font-size: 56px;
+    line-height: 72px;
+}
+.first-view-text p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+.lead {
+    max-width: 1200px;
+    margin: 60px auto;
+}
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+body {
+    font-family: 'Zen Maru Gothic', sans-serif;;
+    font-size: 16pt;
+    color: #000000;
+    line-height: 1;
+    background-color: #FFFFFF;
+}
+img {
+    max-width: 100%;
+}
+.header-inner {
+    max-width: 1200px;
+    height: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle-menu-button {
+    display: none;
+}
+.header-logo {
+    display: block;
+    width: 170px;
+}
+.site-menu ul {
+    display: flex;
+}
+.site-menu ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.site-menu ul li a {
+    font-family:'Zen Maru Gothic', sans-serif;;
+}
+
+.site-menu ul li a {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    text-decoration: underline;
+}
+@media (max-width: 800px) {
+    .toggle-menu-button {
+        display: block;
+        position: fixed; /* 画面の右上に固定配置するためにpositionをfixedに設定 */
+        top: 20px; /* 画面上部からの距離 */
+        right: 20px; /* 画面右端からの距離 */
+        width: 44px;
+        height: 17px;
+        background-image: url(../images/icon-menu.png);
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        outline: none;
+        z-index: 11; /* メニューアイコンが他の要素より手前に表示されるようにz-indexを設定 */
+    }
+
+    .header-site-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        color: #000000;
+        background-color: #f18109a9;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        display: none;
+        z-index: 10; /* メニューパネルが他の要素より手前に表示されるようにz-indexを設定 */
+    }
+    .header-site-menu.is-show {
+        display: block;
+    }
+    .site-menu ul {
+        display: block;
+        text-align: center;
+    }
+    .site-menu li {
+        margin-top: 20px;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        height: 50px;
+        z-index: 10;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+    .header-inner {
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 100%;
+        position: relative;
+    }
+    .header-logo {
+        width: 100px;
+    }
+    .main {
+        padding-top: 50px;
+    }
+    .footer-logo {
+        margin-top: 60px;
+    }
+    .copyright {
+        margin-top: 50px;
+    }
+}
+
+.footer {
+    color: #FFFFFF;
+    background-color: #000000;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo {
+    display: block;
+    width: 235px;
+    margin-top: 90px;
+}
+.copyright {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-top: 90px;
+}
