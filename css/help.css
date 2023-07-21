@@ -1,0 +1,36 @@
+.body-custom {
+    background-color: #F8F8F8;
+    background-image: url(../images/朝_背景画像_トリミング.jpg);
+    color: #333333;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    margin: 0;
+    padding: 40px; /* 上下左右のパディングを40pxに設定 */
+    text-align: center; /* 中央に配置するための指定 */
+}
+.h1-custom {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #303030;
+}
+.h2-custom {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #404040;
+    text-decoration: underline;
+}
+
+.ol-custom {
+    margin: 10px 0 20px 20px;
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+.li-custom {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #505050;
+}
+
+
+

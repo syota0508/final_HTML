@@ -2,7 +2,7 @@
 nav.floating {
     position: absolute;
     top: 100px;
-    left: 50px;
+    right: 50px;
     background-color: #158207a7;
     border-radius: 10px;
 }
@@ -16,6 +16,35 @@ nav.floating {
     align-items: center;
 }
 
+.first-view-custom {
+    height: calc(100vh - 110px);
+    background-image: url(../images/朝_背景画像_トリミング.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.custom-div {
+    max-width: 600px;
+    text-align: justify;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    background-color: #F8F8F8;
+    color: #333333;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    margin: 0;
+    padding: 40px; 
+    text-align: center; 
+    border: solid 1px #04966f;
+    margin: 0 auto;
+    text-align: left;
+
+}
+
 .first-view-text {
     width: 100%;
     max-width: 1200px;
@@ -26,6 +55,17 @@ nav.floating {
     color: #FFFFFF;
     font-weight: bold;
     text-shadow: 1px 1px 10px #5D116E;
+}
+
+.first-view-text-custom {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 80px;
+    color: #FFFFFF;
+    font-weight: bold;
 }
 .first-view-text h1 {
     font-family: 'Zen Maru Gothic', sans-serif;;
@@ -97,11 +137,36 @@ img {
     font-family: 'Zen Maru Gothic', sans-serif;
     text-decoration: underline;
 }
+
+.h1-custom {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #303030;
+}
+
+.dive{
+    margin: 40px auto;
+    max-width: 600px;
+    text-align: justify;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    background-color: #F8F8F8;
+    
+    color: #333333;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    margin: 0;
+    padding: 40px; /* 上下左右のパディングを40pxに設定 */
+    text-align: center; /* 中央に配置するための指定 */
+}
+
 @media (max-width: 800px) {
     .toggle-menu-button {
         display: block;
         position: fixed; /* 画面の右上に固定配置するためにpositionをfixedに設定 */
-        top: 20px; /* 画面上部からの距離 */
+        top: 15px; /* 画面上部からの距離 */
         right: 20px; /* 画面右端からの距離 */
         width: 44px;
         height: 17px;
@@ -171,6 +236,7 @@ img {
 .footer {
     color: #FFFFFF;
     background-color: #000000;
+    font-family:'Zen Maru Gothic', sans-serif;;
     padding-top: 30px;
     padding-bottom: 15px;
     display: flex;

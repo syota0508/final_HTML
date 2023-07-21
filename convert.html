@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Convert</title>
+    <meta name="description" content="ページの概要">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+    <script src="js/index.js"></script>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="color_css/color.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="header-inner">
+        <a class="header-logo" href="index.html">
+            <img src="images/トップのロゴ1.png" alt="ロゴ">
+        </a>
+        <button class="toggle-menu-button"></button>
+        <div class="header-site-menu">
+            <nav class="site-menu">
+                <ul>
+                    <li><a href="convert.html">convert</li>
+                    <li><a href="change.html">change § to &</li>
+                    <li><a href="color.html">coler list</li>
+                    <li><a href="help.html">help</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<nav class="floating">
+    <ul>
+        <li><a href="#">　⌂　</a></li>
+    </ul>
+</nav>
+<br>
+    <br>
+    <h1 style="text-align: center;">ユニコードエスケープシーケンス変換</h1>
+    <h2>変換</h2>
+    <label for="input-text">変換したい文字列：</label><br>
+    <textarea style="font-size: 20px;" id="input-text"></textarea><br>
+    <button class="convert-button">変換する</button>
+    <div id="output"></div>
+    <h2>逆変換</h2>
+    <label for="input-unicode">変換したいユニコードエスケープシーケンス：</label><br>
+    <textarea style="font-size: 20px;" id="input-unicode"></textarea><br>
+    <button class="reverse-button">逆変換する</button>
+    <div id="output-unicode"></div>
+    <h2>変換履歴</h2>
+    <table class="history-table" style="font-size: 20px; text-align: center;">
+    <tr>
+        <th>文字列 / unicode</th>
+        <th>変換結果</th>
+        <th>履歴削除</th>
+        <th>日時</th>
+    </tr>
+</table>
+</body>
+<footer class="footer">
+    <nav class="site-menu">
+        <ul>
+            <li><a href="convert.html">convert</a></li>
+            <li><a href="change.html"> change § to &</a></li>
+            <li><a href="color.html">coler list</a></li>
+            <li><a href="help.html">help</a></li>
+        </ul>
+    </nav>
+    <a class="footer-logo" href="index.html">
+        <img src="images/aaaaaaaa.png" alt="ロゴ">
+    </a>
+    <p class="copyright"><small>&copy;3班</small></p>
+</footer>
+</html>
